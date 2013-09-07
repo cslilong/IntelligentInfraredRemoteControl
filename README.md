@@ -41,27 +41,39 @@ This project use the android phone control the device through Infrared.
 系统的启动流程是：系统先启动uboot来初始化来设置系统的看门狗定时器，初始化硬件信息，然后加载linux内核驱动等，然后在加载文件系统，所以要移植android系统，我们首先要移植uboot，然后在移植linux内核，再次移植一个临时文件系统，最后再移植我们自己制作的android文件系统。下面我们就介绍一下adroid系统的移植过程。<br />
 - 1.1烧写uboot。
 开始下载u-boot.bin： <br />
-    # tftp c0008000 u-boot.bin 
+```
+# tftp c0008000 u-boot.bin 
+```
 将u-boot.bin文件通过TFTP32软件的网络功能下载到ANDROID-3G的SDRAM中，地址为c0008000。 <br />
-    # nand erase 0 40000 
+```
+# nand erase 0 40000 
+```
 擦除NANDFLASH上0地址开始大小为0x40000的空间。 <br />
-    # nand write c0008000 0 40000 
+```
+# nand write c0008000 0 40000 
+```
 向NANDFLASH写入从SDRAM上c0008000地址处的文件，写入到NANDFLASH上0地址开始处0x40000大小的内容<br />
 
 - 1.2 烧写linux内核
 配置IP地址后，执行以下命令，如图所示： <br />
-    # tftp c0008000 zImage 
+```
+# tftp c0008000 zImage 
+```
 利用TFTP32软件将内核文件zImage烧写如SDRAM地址为c0008000 <br />
-    # nand erase 40000 3c0000 
+```
+# nand erase 40000 3c0000 
+```
 将NANDFLASH起始地址为0x40000开始处大小为0x3c0000的空间擦除 <br />
-    # nand write c0008000 40000 3c0000 
+```
+# nand write c0008000 40000 3c0000 
+```
 从SDRAM的0xc0000000地址处，向NANDFLASH起始地址为0x40000写入大小为0x3c0000的文件内容。 如图1-1和图1-2：<br />
  
 图1-1<br />
  
 图1-2<br />
 1.3 烧写临时文件系统cramfs
-	把文件系统制作成cramfs格式的文件，这样以便于烧写到nandflash中<br />
+把文件系统制作成cramfs格式的文件，这样以便于烧写到nandflash中<br />
 ```
 # tftp c0008000 root_mkfs.cramfs 
 ```
