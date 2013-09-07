@@ -71,9 +71,9 @@ This project use the android phone control the device through Infrared.
 ```
 从SDRAM的0xc0000000地址处，向NANDFLASH起始地址为0x40000写入大小为0x3c0000的文件内容。 如图1-1和图1-2：<br />
 ![image008](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image008.gif)
-图1-1<br />
+<br />图1-1<br />
 ![image010](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image010.gif)
-图1-2<br />
+<br />图1-2<br />
 1.3 烧写临时文件系统cramfs
 把文件系统制作成cramfs格式的文件，这样以便于烧写到nandflash中<br />
 ```
@@ -137,13 +137,19 @@ Android文件系统烧写完毕 ！<br />
 ![image020](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image020.gif)
 
 ###2、红外控制驱动
+<br />
 **2.1 红外控制简介**
+<br />
 红外线遥控器已被广泛使用在各种类型的家电产品上，它的出现给使用电器提供了很多的便利。红外遥控系统一般由红外发射装置和红外接收设备两大部分组成。红外发射装置又可由键盘电路、红外编码芯片、电源和红外发射电路组成。红外接收设备可由红外接收电路、红外解码芯片、电源和应用电路组成。通常为了使信号能更好的被传输发送端将基带二进制信号调制为脉冲串信号，通过红外发射管发射。常用的有通过脉冲宽度来实现信号调制的脉宽调制（PWM）和通过脉冲串之间的时间间隔来实现信号调制的脉时调制（PPM）两种方法。
 ![image022](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image022.jpg)
+<br />
 **2.2 红外编码**
+<br />
 红外编码的数据格式包括了引导码、用户码、数据码和数据码反码，编码总占 32 位。数据反码是数据码反相后的编码，编码时可用于对数据的纠错。注意：第二段的用户码也可以在遥控应用电路中被设置成第一段用户码的反码。如下图所示：
 ![image024](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image024.jpg)
+<br />
 **2.3 红外驱动程序**
+<br />
 红外驱动程序就是按照各个按键的编码，使用定时器来发送这些编码即可，由于代码比较长，这里不贴出，具体参见cir.c文件，把cir.c放到linux内核的响应目录下，在makefile文件和Kconfig文件下添加相应的配置，就可以把红外控制驱动添加到linux内核中，这样在上层应用程序中就可以直接调用红外驱动程序了。
 
 ###3、Android客户端程序设计
