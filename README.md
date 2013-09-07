@@ -169,9 +169,9 @@ libhardware_legacy 是将 *.so 文件当作shared library来使用，在runtime�
 现在的libhardware 架构。HAL stub 是一种代理人（proxy）的概念，stub 虽然仍是以 *.so的形式存在，但HAL已经将 *.so 档隐藏起来了。Stub 向 HAL提供操作函数（operations），而 runtime 则是向 HAL 取得特定模块（stub）的 operations，再 callback 这些操作函数。
 - 3.3 Mokid工程代码分析
 Android的HAL的实现需要通过JNI(Java Native Interface)，JNI简单来说就是java程序可以调用C/C++写的动态链接库，这样的话，HAL可以使用C/C++语言编写，效率更高。在Android下访问HAL大致有以下两种方式：
-- （1）Android的app可以直接通过service调用.so格式的jni 
+<br />（1）Android的app可以直接通过service调用.so格式的jni <br />
 ![image028](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image028.gif)
-- （2）经过Manager调用service 
+<br />（2）经过Manager调用service <br />
 ![image030](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image030.gif)
 <br />
 在Android下访问HAL两种方式,我们在这里主要分析第一种实现方式： Android的APP可以直接通过service层调用JNI层。APP层、SERVER层、JNI层、HAL层。各层的代码具体参见mokoid文件夹下的源文件。
