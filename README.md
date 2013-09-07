@@ -70,9 +70,9 @@ This project use the android phone control the device through Infrared.
 # nand write c0008000 40000 3c0000 
 ```
 从SDRAM的0xc0000000地址处，向NANDFLASH起始地址为0x40000写入大小为0x3c0000的文件内容。 如图1-1和图1-2：<br />
-![image008](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image008.jpg)
+![image008](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image008.gif)
 图1-1<br />
-![image010](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image010.jpg)
+![image010](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image010.gif)
 图1-2<br />
 1.3 烧写临时文件系统cramfs
 把文件系统制作成cramfs格式的文件，这样以便于烧写到nandflash中<br />
@@ -88,9 +88,9 @@ This project use the android phone control the device through Infrared.
 # nand write c0008000 400000 400000 
 ```
 将SDRAM上0xc0008000地址开始的内容烧写到NANDFLASH的0x400000起始地址，大小为0x400000，如图1-3和图1-4：<br />
-![image012](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image012.jpg)
+![image012](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image012.gif)
 图1-3<br />
-![image014](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image014.jpg)
+![image014](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image014.gif)
 图1-4<br />
 - 1.4 烧写android文件系统
 系统烧写cramfs文件系统后，即可利用cramfs文件系统烧写Android文件系统。<br />
@@ -110,11 +110,11 @@ This project use the android phone control the device through Infrared.
 ```
 #mount –t vfat /dev/sda1 /mnt/udisk
 ```
-![image016](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image016.jpg)
+![image016](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image016.gif)
 图1-5<br />
 - 1.4.3 烧写android文件系统镜像
 1) 执行wr_ubifs命令烧写文件系统，如图1-6所示： <br />
-![image018](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image018.jpg)
+![image018](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image018.gif)
 图1-6<br />
 
 2) 选择a格式化磁盘分区，之后烧写文件系统<br />
@@ -134,7 +134,7 @@ This project use the android phone control the device through Infrared.
 Android文件系统烧写完毕 ！<br />
 
 启动系统以后，便可以进入android系统了。一下是android的一个界面截图：<br />
-![image020](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image020.jpg)
+![image020](https://github.com/cslilong/IntelligentInfraredRemoteControl/raw/master/images/image020.gif)
 
 ###2、红外控制驱动
 - 2.1 红外控制简介
