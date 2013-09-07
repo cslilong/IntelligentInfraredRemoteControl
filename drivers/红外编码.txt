@@ -1,0 +1,71 @@
+引导码：9ms(低) 4.5ms(高)
+用户码：0x00
+逻辑0：0.54ms(低) 0.6ms(高)
+逻辑1：0.54ms(低) 1.75ms(高)
+先发高位
+POWER:0x38
+OK:0x52
+MENU:0xBA
+上：0xC8
+下：0xF1
+左：0xCC
+右：0x8B
+VOL+:0x12
+VOL-:0xF8
+CH+:0xAA
+CH-:0x4A
+1:0xF0
+2:0xE5
+3:0xC5
+4:0x30
+5:0x60
+6:0xA0
+7:0xF2
+8:0xB2
+9:0x32
+0:0x10
+
+// 开关
+ir_test 1c
+
+// 频道+
+ir_test 55
+
+// 频道-
+ir_test 52
+
+// VOL+
+ir_test 48
+
+// VOL-
+ir_test 1f
+
+// 1
+ir_test f0
+
+// 2 
+ir_test 72
+
+// 3 
+ir_test 62
+
+// 4
+ir_test 30
+
+// 5
+ir_test 60
+
+// 6
+ir_test a0
+
+// 7
+ir_test f2
+
+// 8 
+ir_test b2
+
+// 9
+ir_test 32
+
+// 0
+ir_test 10

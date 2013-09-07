@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 
+    <string name="hello">Hello World, SmartControllerActivity!</string>
+ -->    
+    <string name="hello">欢迎使用湖南大学开发的万能遥控器!</string>
+    <string name="app_name">万能遥控器</string>
+    <string name="xianshi">选择</string>
+    <string name="seldefine">已有遥控器</string>
+    <string name="nodefine">自己制作</string>
+    
+    <string name="go">GoooooO</string>
+    <string name="defineIntr"> 选择这项你就可以\n
+        \n  1.使用自带遥控器以及编码\n
+        \n  2.使用自己以前定义的遥控器</string>
+	<string name="nodefIntr"> 选择这项你就可以\n
+	    \n  1.自己定义一个遥控器\n
+	    \n  2.从官网下载编码
+	    \n<a href="http://www.baidu.com">上官网去</a></string>
+	<string name="mention">\n\n\n请选择一项</string>
+	<string name="tishiedit">请输入要保存的文件名</string>
+
+	<string name="open">开关</string>
+    <string name="ch_up">频道+</string>
+    <string name="ch_down">频道-</string>
+    <string name="vol_up">声音+</string>
+    <string name="vol_down">声音-</string>
+    <string name="n_1">1</string>
+    <string name="n_2">2</string>
+    <string name="n_3">3</string>
+    <string name="n_4">4</string>
+    <string name="n_5">5</string>
+    <string name="n_6">6</string>
+    <string name="n_7">7</string>
+    <string name="n_8">8</string>
+    <string name="n_9">9</string>
+    <string name="n_0">0</string>
+    <string name="back">返回</string>
+</resources>

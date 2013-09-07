@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+        android:id="@+id/welcome_log"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:text="@string/hello"
+        />
+	<RadioGroup 
+	    android:id="@+id/welcome_radiogroup"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    <RadioButton 
+	        android:id="@+id/already_define"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="30dp"
+	        android:text="@string/seldefine"
+	        />
+	    <RadioButton 
+	        android:id="@+id/nodefine"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="30dp"
+	        android:text="@string/nodefine"
+	        />
+	</RadioGroup>
+	
+	
+	        <Button 
+	    		android:id="@+id/go"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginLeft="1dp"
+	    		android:clickable="true"
+	    		android:text="@string/go"
+	 		/>
+
+	<TextView 
+	    android:id="@+id/simpleintruduction"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:shadowColor="#ffffff00"
+	    android:autoLink="web"
+	    android:minLines="15"
+	    android:text="@string/mention"
+	    />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TableLayout 
+	    android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:stretchColumns="*" >
+	<TableRow >
+	<Button
+    	android:id="@+id/button_open"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+	android:background="@drawable/onoffxml"
+	android:clickable="true" 
+    	/>
+	<Button
+    	android:id="@+id/ch_up"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/chpxml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/ch_down"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/chdxml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/back"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/backxml"
+	android:clickable="true" 
+    	/>
+    	</TableRow>
+    	<TableRow >
+	<Button
+    	android:id="@+id/n_7"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn7xml"
+	android:clickable="true" 
+    	/>
+	<Button
+    	android:id="@+id/n_8"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn8xml"
+	android:clickable="true"  
+    	/>
+    <Button
+    	android:id="@+id/n_9"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn9xml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/n_0"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn0xml"
+	android:clickable="true" 
+    	/>
+    	</TableRow>
+    	<TableRow >
+	<Button
+    	android:id="@+id/n_4"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn4xml"
+	android:clickable="true"  
+    	/>
+	<Button
+    	android:id="@+id/n_5"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn5xml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/n_6"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn6xml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/vol_up"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/volpxml"
+	android:clickable="true" 
+    	/>
+    	</TableRow>
+    	
+    	<TableRow >
+	<Button
+    	android:id="@+id/n_1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn1xml"
+	android:clickable="true" 
+    	/>
+	<Button
+    	android:id="@+id/n_2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn2xml"
+	android:clickable="true"  
+    	/>
+    <Button
+    	android:id="@+id/n_3"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn3xml"
+	android:clickable="true" 
+    	/>
+    <Button
+    	android:id="@+id/vol_down"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/voldxml"
+	android:clickable="true" 
+    	/>
+    	</TableRow>
+    	
+    	
+    	
+    </TableLayout>
+</LinearLayout>

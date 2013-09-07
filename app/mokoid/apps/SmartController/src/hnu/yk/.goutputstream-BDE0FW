@@ -1,0 +1,19 @@
+package hnu.yk;
+import java.util.List;
+
+import com.mokoid.server.LedService;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.*;
+import android.widget.AdapterView.OnItemSelectedListener;
+
+public class ControllerPanel extends Activity{
+/*	private native int sentContolCode(String ctl);
+	static{
+		System.loadLibrary("sendcode");
+	}
+	*/
+	private String FileName="";    //

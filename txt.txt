@@ -1,0 +1,55 @@
+
+
+
+LedService ls = new LedService();
+ls.setOn(0x1c);
+
+
+// 开关
+ir_test 1c
+
+// 频道+
+ir_test 55
+
+// 频道-
+ir_test 52
+
+// VOL+
+ir_test 48
+
+// VOL-
+ir_test 1f
+
+// 1
+ir_test f0
+
+// 2 
+ir_test 72
+
+// 3 
+ir_test 62
+
+// 4
+ir_test 30
+
+// 5
+ir_test 60
+
+// 6
+ir_test a0
+
+// 7
+ir_test f2
+
+// 8 
+ir_test b2
+
+// 9
+ir_test 32
+
+// 0
+ir_test 10
+
+
+				
+				

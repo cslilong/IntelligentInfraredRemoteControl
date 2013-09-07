@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">欢迎使用湖南大学万能遥控</string>
+    <string name="app_name">万能遥控</string>
+    <string name="open">开关</string>
+    <string name="ch_up">频道+</string>
+    <string name="ch_down">频道-</string>
+    <string name="vol_up">声音+</string>
+    <string name="vol_down">声音-</string>
+    <string name="n_1">1</string>
+    <string name="n_2">2</string>
+    <string name="n_3">3</string>
+    <string name="n_4">4</string>
+    <string name="n_5">5</string>
+    <string name="n_6">6</string>
+    <string name="n_7">7</string>
+    <string name="n_8">8</string>
+    <string name="n_9">9</string>
+    <string name="n_0">0</string>
+    <string name="back">返回</string>
+</resources>
