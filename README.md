@@ -37,7 +37,9 @@ This project use the android phone control the device through Infrared.
  
 ###1、移植android系统
 一般系统在nandflash中的分布如下图：<br />
- 
+
+![image006](images/image006.jpg)
+
 系统的启动流程是：系统先启动uboot来初始化来设置系统的看门狗定时器，初始化硬件信息，然后加载linux内核驱动等，然后在加载文件系统，所以要移植android系统，我们首先要移植uboot，然后在移植linux内核，再次移植一个临时文件系统，最后再移植我们自己制作的android文件系统。下面我们就介绍一下adroid系统的移植过程。<br />
 - 1.1烧写uboot。
 开始下载u-boot.bin： <br />
